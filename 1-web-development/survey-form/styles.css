@@ -1,3 +1,15 @@
+form {
+  padding: 5vw;
+  background-color: white;
+}
+
+#header-div {
+  margin-bottom: 10vh;
+  text-align: center;
+  font-size: 125%;
+}
+
 #main-div {
   padding: 10vw;
+  background-color: #e8e8e4;
 }
