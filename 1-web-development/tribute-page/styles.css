@@ -1,12 +1,37 @@
 img {
-  max-width: 80vw;
+  max-width: 75vw;
+  margin-top: 2vw;
 }
 
 #header-div {
   font-size: 125%;
+  background-color: #f5ebe0;
+  margin-top: 20px;
+  padding: 60px;
+  width: 100vw;
 }
 
 #main-div {
   padding: 10vw;
   text-align: center;
+  background-color: #e3d5ca;
+}
+
+#img-div {
+  margin-top: 165px;
+  text-align: center;
+  background-color: #edede9;
+  padding: 0;
+  line-height: 50px;
+}
+
+#tribute-info {
+  margin-top: 65px;
+}
+
+#tribute-info ul {
+  list-style: inside;
+  text-align: left;
+  padding: 0 15vw 0 15vw;
+  margin-bottom: 65px;
 }
