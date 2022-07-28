@@ -1,8 +1,12 @@
+img {
+  max-width: 80vw;
+}
+
+#header-div {
+  font-size: 125%;
+}
+
 #main-div {
   padding: 10vw;
   text-align: center;
-}
-
-img {
-  max-width: 80vw;
 }
