@@ -25,15 +25,33 @@
         <h1 id="Introduction">Introduction</h1>
           <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
           <p>This tutorial introduces the reader informally to the basic concepts and features of the Python language and system. It helps to have a Python interpreter handy for hands-on experience, but all examples are self-contained, so the tutorial can be read off-line as well.</p> 
-          <p>All content on this page is taken from the <a href="https://docs.python.org/" alt="Link to MDN HTML documentation">official Python docs</a>.</p>
+          <p>Content on this page is taken from the <a href="https://docs.python.org/" alt="Link to MDN HTML documentation">official Python docs</a>.</p>
           <br>
         <h1 id="Variables">Variables</h1>
-          <p>Assign variables using "=", like so:</p>
+        <div class="mb-4">
+          <p>Assign variables using "=". If the variable is not defined, trying to use it will give you an error (NameError).</p>
           <code>animal = "dog"</code>
+        </div>
+        <div class="mb-4">
           <p>In the above example, the <strong>animal</strong> variable is set to a string, which can be enclosed in single quotes or double quotes.
-          Strings can be concatenated with the <strong>+</strong> operator, and repeated with <strong>*</strong>. For example, the following line of code produces 'banana':</p>
-          <code>'ba' + 2 * 'na'</code>
-          <p></p>
+          Strings can be concatenated with the <strong>+</strong> operator, and repeated with <strong>*</strong>.</p>
+          <code>>>>'ba' + 2 * 'na' <br> banana</code>
+        </div>
+        <div class="mb-4">
+          <p>For numbers, expression syntax is straightforward: the operators <strong>+</strong>, <strong>-</strong>, <strong>*</strong> and <strong>/</strong> work just like in most other languages; parentheses <strong>()</strong> can be used for grouping.</p>
+          <code>>>> (50 - 5*6) / 4 # division always returns a floating point number. <br> 5.0</code>
+        </div>
+        <div class="mb-4">
+          <p>Integer numbers (e.g. 2, 4, 20) have type <strong>int</strong>, while the ones with a fractional part (e.g. 5.0, 1.6) have type <strong>float</strong>.</p>
+          <p>To do <strong>floor division</strong> and get an integer result, use the <strong>//</strong> operator; use <strong>%</strong> to calculate the remainder.</p>
+          <code>
+            >>> 17 // 3 # floor division discards the fractional part <br> 
+            5 <br>
+            >>> 17 % 3 # the % operator returns the remainder of the division <br>
+            2
+          </code>
+        </div>
+        <br>
         <h1 id="Lists">Lists & Indexing</h1>
         <h1 id="If-else">If/else statements</h1>
         <h1 id="Loops">Loops</h1>

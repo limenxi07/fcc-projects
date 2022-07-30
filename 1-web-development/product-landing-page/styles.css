@@ -1,3 +1,10 @@
+code {
+  color: white;
+  display: block;
+  padding: 10px;
+  background-color: #edede9;
+}
+
 #main-div {
   padding: 5vw;
 }
