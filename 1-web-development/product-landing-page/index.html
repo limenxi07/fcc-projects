@@ -38,12 +38,20 @@
           <code>>>>'ba' + 2 * 'na' <br> banana</code>
         </div>
         <div class="mb-4">
+          <p>The build-in function <strong>len()</strong> returns the length of a string.</p>
+          <code>
+            >>> s = 'supercalifragilisticexpialidocious' <br>
+            >>> len(s) <br>
+            34
+          </code>
+        </div>
+        <div class="mb-4">
           <p>For numbers, expression syntax is straightforward: the operators <strong>+</strong>, <strong>-</strong>, <strong>*</strong> and <strong>/</strong> work just like in most other languages; parentheses <strong>()</strong> can be used for grouping.</p>
           <code>>>> (50 - 5*6) / 4 # division always returns a floating point number. <br> 5.0</code>
         </div>
         <div class="mb-4">
           <p>Integer numbers (e.g. 2, 4, 20) have type <strong>int</strong>, while the ones with a fractional part (e.g. 5.0, 1.6) have type <strong>float</strong>.</p>
-          <p>To do <strong>floor division</strong> and get an integer result, use the <strong>//</strong> operator; use <strong>%</strong> to calculate the remainder.</p>
+          <p>To do floor division and get an integer result, use the <strong>//</strong> operator; use <strong>%</strong> to calculate the remainder.</p>
           <code>
             >>> 17 // 3 # floor division discards the fractional part <br> 
             5 <br>
@@ -53,7 +61,65 @@
         </div>
         <br>
         <h1 id="Lists">Lists & Indexing</h1>
+        <div class="mb-4">
+          <p>Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
+          <code>>>> squares = [1, 4, 9, 16, 25] <br>
+          >>> squares <br>
+          [1, 4, 9, 16, 25]
+          </code>
+        </div>
+        <div class="mb-4">
+          <p>The built-in function <strong>len()</strong> also applies to lists.</p>
+          <code>
+            >>> letters = ['a', 'b', 'c', 'd']<br>
+            >>> len(letters)<br>
+            4
+          </code>
+        </div>
+        <div class="mb-4">
+          <p>Lists and strings can be indexed. The first character has index 0. Indices may also be negative numbers, to start counting from the right.</p>
+          <code>
+            >>> word = 'Python' <br>
+            >>> word[0] # character in position 0 <br>
+            'P' <br>
+            >>> word[5]  # character in position 5 <br>
+            'n' <br>
+            >>> word[-2] # second-last character <br>
+            'o'
+          </code>
+        </div>
+        <div class="mb-4">
+          <p>Lists can strings can also be sliced to obtain sublists and substrings respectively. If omitted, the first index defaults to zero, and the omitted second index defaults to the size of the list/string being sliced.</p> 
+          <p>Note that the start is always included, and the end is always excluded. Attempting to use an index that is too large will result in an error (IndexError).</p>
+          <code>
+            >>> word[0:2] # characters from position 0 (included) to 2 (excluded) <br>
+            'Py' <br>
+            >>> word[:2] # character from the beginning to position 2 (excluded)<br>
+            'Py'<br>
+            >>> word[4:] # characters from position 4 (included) to the end<br>
+            'on'
+          </code>
+        </div>
+        <div class="mb-4">
+          <p>Lists are mutable; you can change their content by assigning list indices or sublists to different values.</p>
+          <code>
+            >>> cubes = [1, 8, 27, 65, 125] <br>
+            >>> cubes[3] = 64  # replace the wrong value<br>
+            >>> cubes<br>
+            [1, 8, 27, 64, 125]
+          </code>
+        </div>
+        <div class="mb-4">
+          <p>Python strings cannot be changed; they are immutable. Assigning to an indexed position in the string results in an error (TypeError). Change the contents of a string by creating a new one, then reassigning the variable to this new string.</p>
+          <code>
+            >>> word = 'Python'<br>
+            >>> word = 'J' + word[1:]<br>
+            'Jython'
+          </code>
+        </div>
+        <br>
         <h1 id="If-else">If/else statements</h1>
+        <br>
         <h1 id="Loops">Loops</h1>
       </div>
     </div>
