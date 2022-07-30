@@ -7,4 +7,11 @@ code {
 
 #main-div {
   padding: 5vw;
+  row-gap: 10;
+}
+
+#navbar-brand {
+  color: black;
+  font-size: 125%;
+  text-align: center;
 }
