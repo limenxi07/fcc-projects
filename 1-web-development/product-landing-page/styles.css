@@ -1,5 +1,11 @@
+#header {
+  font-size: 30px;
+  margin: 20px;
+}
+
 #main-div {
   padding: 20px;
+  text-align: center;
 }
 
 #brand-icon {
