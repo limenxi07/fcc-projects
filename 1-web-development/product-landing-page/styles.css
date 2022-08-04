@@ -1,6 +1,14 @@
+.feature-title {
+  font-size: 1.5em;
+}
+
 #header {
   font-size: 30px;
   margin: 20px;
+}
+
+#brand-icon {
+  margin: 0 10px 0 5vw;
 }
 
 #main-div {
@@ -8,6 +16,7 @@
   text-align: center;
 }
 
-#brand-icon {
-  margin: 0 10px 0 5vw;
+#feature-div {
+  padding: 60px 20vw 60px 20vw;
+  text-align: left;
 }
