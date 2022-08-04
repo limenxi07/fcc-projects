@@ -2,6 +2,15 @@
   font-size: 1.5em;
 }
 
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+  background-color: #728772 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #839A83 !important;
+}
+
 #header {
   font-size: 30px;
   margin: 20px;
