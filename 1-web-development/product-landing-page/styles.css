@@ -20,12 +20,12 @@
   margin: 0 10px 0 5vw;
 }
 
-#main-div {
+#header-div {
   padding: 20px;
   text-align: center;
 }
 
-#feature-div {
+#main-div {
   padding: 60px 20vw 60px 20vw;
   text-align: left;
 }
