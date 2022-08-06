@@ -17,6 +17,8 @@ body {
 #about {
   background-color: #3b4252;
   height: 100vh;
+  text-align: center;
+  padding: 40vh 0;
 }
 
 #intro {
@@ -24,5 +26,6 @@ body {
 }
 
 #intro-text {
-  
+  font-size: 1.5em;
+  font-style: italic;
 }
