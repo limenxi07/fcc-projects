@@ -1,3 +1,28 @@
+body {
+  color: rgb(207, 204, 204) !important
+}
+
+.navbar {
+  background-color: #2e3440 !important;
+}
+
 .nav-item {
   padding: 0 1vw 0 1vw;
+}
+
+.nav-link {
+  color: rgb(207, 204, 204) !important;
+}
+
+#about {
+  background-color: #3b4252;
+  height: 100vh;
+}
+
+#intro {
+  font-size: 2em;
+}
+
+#intro-text {
+  
 }
