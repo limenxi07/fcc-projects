@@ -25,6 +25,12 @@ body {
   color: rgb(207, 204, 204) !important;
 }
 
+.card-text {
+  color: #232323 !important;
+  font-size: 1.25em;
+  text-align: center;
+}
+
 #about {
   background-color: #3b4252;
   height: 100vh;
