@@ -2,6 +2,10 @@ body {
   color: rgb(207, 204, 204) !important
 }
 
+.heading {
+  font-size: 2.5em;
+}
+
 .navbar {
   background-color: #2e3440 !important;
 }
@@ -21,11 +25,12 @@ body {
   padding: 40vh 0;
 }
 
-#intro {
-  font-size: 2em;
-}
-
 #intro-text {
   font-size: 1.5em;
   font-style: italic;
+  font-weight: 200;
+}
+
+#work {
+  padding: 150px 10vw;
 }
