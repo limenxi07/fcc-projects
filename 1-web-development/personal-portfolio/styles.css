@@ -31,7 +31,14 @@ body {
   text-align: center;
 }
 
+.link {
+  text-decoration: none;
+  color:rgb(207, 204, 204);
+  margin-left: 10px;
+}
+
 #contact-list {
+  margin-top: 50px;
   font-size: 2em;
 }
 
