@@ -31,6 +31,10 @@ body {
   text-align: center;
 }
 
+#contact-list {
+  font-size: 2em;
+}
+
 #about {
   background-color: #3b4252;
   height: 100vh;
@@ -51,4 +55,10 @@ body {
 
 #project-grid {
   margin: 40px 0 40px;
+}
+
+#contact {
+  background-color: #2e3440;
+  padding: 100px 15vw;
+  text-align: center;
 }
