@@ -10,7 +10,9 @@ function App() {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
 
-  useEffect(() => {
+  const handleClick = () => fetchQuote();
+
+  const fetchQuote = useEffect(() => {
     let rand = Math.floor(Math.random() * 100);
     fetch('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json').then(res => res.json()).then((data) => {
       setQuote(data['quotes'][rand]['quote']);
@@ -23,7 +25,7 @@ function App() {
       <div id="quote-container">
         <p id="quote">{quote}</p>
         <p id="author">{author}</p>
-        <Button id="new-quote">New quote</Button>
+        <button id="new-quote" onClick={handleClick}>New quote</button>
         <Button id="tweet-quote">Tweet</Button>
       </div>
     </div>
