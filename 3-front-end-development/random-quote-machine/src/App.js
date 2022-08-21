@@ -9,6 +9,7 @@ import './App.scss';
 function App() {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
+  const tweet = 'https://twitter.com/intent/tweet?text=' + `${quote} ${author}`.replace(/ /g, '%20');
 
   useEffect(() => fetchQuote(), []);
 
@@ -18,7 +19,7 @@ function App() {
     .then(res => res.json())
     .then((data) => {
       setQuote(data['quotes'][rand]['quote']);
-      setAuthor(data['quotes'][rand]['author']);
+      setAuthor(`- ${data['quotes'][rand]['author']}`);
     });
   };
 
@@ -27,8 +28,8 @@ function App() {
       <div id="quote-container">
         <p id="quote">{quote}</p>
         <p id="author">{author}</p>
-        <button id="new-quote" onClick={fetchQuote}>New quote</button>
-        <Button id="tweet-quote">Tweet</Button>
+        <Button id="new-quote" onClick={fetchQuote}>New quote</Button>
+        <a id="tweet-quote" href={tweet}><img src="https://img.icons8.com/ios-glyphs/90/000000/twitter--v1.png" alt="Twitter logo"/></a>
       </div>
     </div>
   );
