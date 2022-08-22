@@ -1,6 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { useState, useEffect } from 'react';
 
@@ -10,6 +7,8 @@ function App() {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
   const tweet = 'https://twitter.com/intent/tweet?text=' + `${quote} ${author}`.replace(/ /g, '%20');
+  const root = document.documentElement;
+  const colors = ['#3a5a40', '#14213d'];
 
   useEffect(() => fetchQuote(), []);
 
@@ -20,6 +19,7 @@ function App() {
     .then((data) => {
       setQuote(data['quotes'][rand]['quote']);
       setAuthor(`- ${data['quotes'][rand]['author']}`);
+      root?.style.setProperty('--primary', colors[Math.floor(Math.random() * colors.length)])
     });
   };
 
