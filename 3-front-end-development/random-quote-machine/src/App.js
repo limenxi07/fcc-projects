@@ -8,7 +8,7 @@ function App() {
   const [author, setAuthor] = useState('');
   const tweet = 'https://twitter.com/intent/tweet?text=' + `${quote} ${author}`.replace(/ /g, '%20');
   const root = document.documentElement;
-  const colors = ['#3a5a40', '#14213d'];
+  const colors = ['#d8e2dc', '#ffe5d9'];
 
   useEffect(() => fetchQuote(), []);
 
@@ -28,8 +28,10 @@ function App() {
       <div id="quote-container">
         <p id="quote">{quote}</p>
         <p id="author">{author}</p>
-        <Button id="new-quote" onClick={fetchQuote}>New quote</Button>
-        <a id="tweet-quote" href={tweet}><img src="https://img.icons8.com/ios-glyphs/90/000000/twitter--v1.png" alt="Twitter logo"/></a>
+        <div id="button-container">
+          <Button id="new-quote" onClick={fetchQuote}>New quote</Button>
+          <a id="tweet-quote" href={tweet}><img src="https://img.icons8.com/ios-glyphs/90/000000/twitter--v1.png" alt="Twitter logo" id="twitter-icon"/></a>
+        </div>
       </div>
     </div>
   );
