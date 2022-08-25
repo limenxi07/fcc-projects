@@ -46,6 +46,7 @@ const App = () => {
             <h2>Editor</h2>
             <textarea id="editor" name="editor" onChange={onContentChange} value={markdown}></textarea>
           </Col>
+          <Col xs={1}></Col>
           <Col>
             <h2>Preview</h2>
             <div id="preview" dangerouslySetInnerHTML={{__html: marked(markdown)}}></div>
