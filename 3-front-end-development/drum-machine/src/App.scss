@@ -1,0 +1,9 @@
+.display {
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: auto;
+}
+
+.drum-pad {
+  padding: 10px;
+}
