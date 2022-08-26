@@ -1,10 +1,19 @@
+import { useState, useRef } from 'react';
+
 import './App.scss';
 
 const DrumPad = ({ drum }) => {
   const { keyCode, keyTrigger, id, url } = drum;
+  const audio = useRef(null);
+
+  const playSound = () => {
+    audio.currentTime = 0;
+    audio.play();
+  }
   
   return (
-    <div className="drum-pad">
+    <div className="drum-pad" id={id} onClick={playSound}> 
+      <audio className="clip" id={keyTrigger} src={url} ref={audio} />
       <p>{keyTrigger}</p>
     </div>
   );
