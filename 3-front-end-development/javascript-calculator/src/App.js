@@ -11,7 +11,7 @@ const App = () => {
         <p id="display">0</p>
         <Row>
           <Col className="button ac" id="clear" xs={6}>AC</Col>
-          <Col className="button operator" id="change-sign">+/-</Col>
+          <Col className="button ac" id="change-sign">+/-</Col>
           <Col className="button operator" id="divide">÷</Col>
         </Row>
         <Row>
@@ -35,7 +35,7 @@ const App = () => {
         <Row>
           <Col className="button" id="zero" xs={6}>0</Col>
           <Col className="button" id="decimal">.</Col>
-          <Col className="button eq" id="equals">=</Col>
+          <Col className="button operator" id="equals">=</Col>
         </Row>
       </Container>
     </div>

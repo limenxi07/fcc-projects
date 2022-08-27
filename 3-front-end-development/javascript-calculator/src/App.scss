@@ -1,16 +1,30 @@
+.button {
+  background-color: gray;
+  border: 1px solid #403d39;
+  padding: 20px;
+}
+
+.operator {
+  background-color: darkgray;
+}
+
+.ac {
+  background-color: #8a817c;
+}
+
 #main-container {
-  background-color: black;
+  background-color: #403d39;
   color: white;
   padding: 20px;
   width: 350px;
-  height: 475px;
+  height: 495px;
   margin-top: 15vh;
   text-align: center;
   font-size: 24px;
+  border-radius: 5px;
 }
 
-.button {
-  background-color: gray;
-  border: 1px solid black;
-  padding: 20px;
+#display {
+  text-align: right;
+  font-size: 1.7em;
 }
