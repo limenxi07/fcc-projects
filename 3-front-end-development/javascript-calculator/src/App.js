@@ -31,6 +31,13 @@ const App = () => {
   };
 
   const handleClear = (e) => {
+    setVal('0');
+    setPrev('0');
+    setSign('+');
+    setOp('');
+  };
+
+  const handleSign = (e) => {
 
   };
 
@@ -44,7 +51,7 @@ const App = () => {
         <p id="display">{val}</p>
         <Row>
           <Col onClick={handleClear} className="button ac" id="clear" xs={6}>AC</Col>
-          <Col onClick={handleNumber} className="button ac" id="change-sign">+/-</Col>
+          <Col onClick={handleSign} className="button ac" id="change-sign">+/-</Col>
           <Col onClick={handleOperator} className="button operator" id="divide">÷</Col>
         </Row>
         <Row>
@@ -67,7 +74,7 @@ const App = () => {
         </Row>
         <Row>
           <Col onClick={handleNumber} className="button" id="0" xs={6}>0</Col>
-          <Col onClick={handleNumber} className="button" id="decimal">.</Col>
+          <Col onClick={handleNumber} className="button" id=".">.</Col>
           <Col onClick={handleEvaluate} className="button operator" id="equals">=</Col>
         </Row>
       </Container>
