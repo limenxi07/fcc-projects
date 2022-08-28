@@ -5,16 +5,43 @@ import { useState } from 'react';
 import './App.scss';
 
 const App = () => {
-  const [output, setOutput] = useState(0);
+  const [val, setVal] = useState('0');
+  const [prev, setPrev] = useState('0');
+  const [op, setOp] = useState('');
+  const [sign, setSign] = useState('+');
 
   const handleNumber = (e) => {
-    setOutput(e.target.id);
+    if (val.length > 11) {
+      if (val != 'HIT DIGIT LIMIT') {
+        setPrev(val);
+      }
+      setVal('HIT DIGIT LIMIT');
+      setTimeout(() => setVal(prev), 1000);
+    } else {
+      if (val[0] != '0') {
+        setVal(val + e.target.id);
+      } else {
+        setVal(e.target.id);
+      }
+    }
+  };
+
+  const handleOperator = (e) => {
+
+  };
+
+  const handleClear = (e) => {
+
+  };
+
+  const handleEvaluate = (e) => {
+
   };
 
   return (
     <div className="App">
       <Container id="main-container">
-        <p id="display">{output}</p>
+        <p id="display">{val}</p>
         <Row>
           <Col onClick={handleClear} className="button ac" id="clear" xs={6}>AC</Col>
           <Col onClick={handleNumber} className="button ac" id="change-sign">+/-</Col>
