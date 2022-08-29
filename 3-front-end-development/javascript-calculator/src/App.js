@@ -27,7 +27,9 @@ const App = () => {
   };
 
   const handleOperator = (e) => {
-
+    setOp(e.target.id);
+    setPrev(val);
+    setVal(handleEvaluate());
   };
 
   const handleClear = (e) => {
@@ -38,9 +40,7 @@ const App = () => {
   };
 
   const handleSign = (e) => {
-    setSign(e.target.id);
-    setPrev(val);
-    setVal(handleEvaluate());
+    
   };
 
   const handleEvaluate = (e) => {
