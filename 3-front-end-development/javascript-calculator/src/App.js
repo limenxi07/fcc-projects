@@ -12,18 +12,18 @@ const App = () => {
 
   const handleNumber = (e) => {
     if (val.length > 11) {
-      if (val != 'HIT DIGIT LIMIT') {
+      if (val !== 'HIT DIGIT LIMIT') {
         setPrev(val);
       }
       setVal('HIT DIGIT LIMIT');
       setTimeout(() => setVal(prev), 1000);
     } else {
-      if (val[0] != '0') {
-        setVal(val + e.target.id);
-      } else {
+      if (val[0] == '0') {
         setVal(e.target.id);
-      }
-    }
+      } else if (!val.includes('.') || e.target.id !== '.') {
+        setVal(val + e.target.id);
+      } 
+    };
   };
 
   const handleOperator = (e) => {
@@ -38,7 +38,9 @@ const App = () => {
   };
 
   const handleSign = (e) => {
-
+    setSign(e.target.id);
+    setPrev(val);
+    setVal(handleEvaluate());
   };
 
   const handleEvaluate = (e) => {
