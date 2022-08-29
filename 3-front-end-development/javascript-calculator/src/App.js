@@ -8,7 +8,7 @@ const App = () => {
   const [val, setVal] = useState('0');
   const [prev, setPrev] = useState('0');
   const [op, setOp] = useState('');
-  const [sign, setSign] = useState('+');
+  const [sign, setSign] = useState(true);
 
   const handleNumber = (e) => {
     if (val.length > 11) {
@@ -40,12 +40,17 @@ const App = () => {
   };
 
   const handleSign = (e) => {
-    
+    setSign(!sign);
+    if (!sign) {
+      setVal('-' + val);
+    };
   };
 
   const handleEvaluate = (e) => {
 
   };
+
+  console.log(prev, val);
 
   return (
     <div className="App">
